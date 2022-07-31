@@ -1,11 +1,11 @@
 ---
 
-- name: "F5 NODE ADD YT EXAMPLE"
+#- name: "F5 NODE ADD YT EXAMPLE"
 #  hosts: StarWars
 #  connection: local
 #  gather_facts: false
-  collections:
-    - f5networks.f5_modules
+#  collections:
+#    - f5networks.f5_modules
   - name: "CREATE NODE"
     bigip_node:
       host: 10.2.0.4
