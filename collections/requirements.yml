@@ -1,0 +1,7 @@
+---
+
+collections:
+  - ansible.netcommon
+  - f5networks.f5_modules
+  - infoblox.nios_modules
+ 

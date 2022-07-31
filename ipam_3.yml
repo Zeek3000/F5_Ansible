@@ -1,0 +1,11 @@
+---
+- hosts: nios
+  connection: local
+  tasks:
+    - name: Dynamically add host record to next available ip
+      infoblox.nios_modules.nios_host_record:
+        name: testing.test.local
+        ipv4:
+          - address: {nios_next_ip: 172.16.0.0/24}
+        comment: this is a test comment For TREK WARS
+        state: present

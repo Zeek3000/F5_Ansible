@@ -1,0 +1,23 @@
+
+---
+
+- name: "F5 POOL ADD YT EXAMPLE"
+  hosts: StarWars
+  connection: local
+  gather_facts: false
+  collections:
+    - f5networks.f5_modules
+  
+  tasks:
+    - name: Add virtual server
+      bigip_virtual_server:
+        state: present
+        partition: Common
+        name: VIP_TEST_1
+        destination: 172.16.1.1
+        port: 443
+        pool: my-pool
+        snat: Automap
+        description: Test Virtual Server
+        provider: "{{ provider }}"
+
