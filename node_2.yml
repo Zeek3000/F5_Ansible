@@ -5,10 +5,9 @@
 #  connection: local
 #  gather_facts: false
 #  collections:
-    - f5networks.f5_modules
-  tasks:
-    - name: "CREATE NODE"
-      bigip_node:
-        host: 10.2.0.4
-        name: Test_Ansible_Node
-        provider: "{{ provider }}"
+#    - f5networks.f5_modules
+  - name: "CREATE NODE"
+    bigip_node:
+      host: 10.2.0.4
+      name: Test_Ansible_Node
+#      provider: "{{ provider }}"
