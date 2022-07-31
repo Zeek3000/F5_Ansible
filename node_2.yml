@@ -4,10 +4,10 @@
 #  hosts: StarWars
 #  connection: local
 #  gather_facts: false
-#  collections:
-#    - f5networks.f5_modules
+  collections:
+    - f5networks.f5_modules
   - name: "CREATE NODE"
-    f5networks.f5_modules.bigip_node:
+    bigip_node:
       host: 10.2.0.4
       name: Test_Ansible_Node_From_Git
 #      provider: "{{ provider }}"
