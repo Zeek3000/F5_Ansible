@@ -13,7 +13,7 @@
         host: 10.2.0.4
         name: Test_Ansible_Node_From_Git
         provider:
-          server: Star_Wars_F5
+          server: 192.168.0.122
 #        user: admin
 #          password: secret
  
