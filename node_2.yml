@@ -6,6 +6,8 @@
 #  gather_facts: false
 #  collections:
 #    - f5networks.f5_modules
+
+task:
 - name: "CREATE NODE"
   f5networks.f5_modules.bigip_node:
     host: 10.2.0.4
