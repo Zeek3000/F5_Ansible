@@ -1,7 +1,7 @@
 ---
 
 - name: "F5 NODE ADD YT EXAMPLE"
-#  hosts: Star_Wars_F5
+  hosts: Star_Wars_F5
   connection: local
   gather_facts: false
 #  collections:
