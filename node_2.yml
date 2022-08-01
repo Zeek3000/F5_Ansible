@@ -14,6 +14,6 @@
         name: Test_Ansible_Node_From_Git
         provider:
           server: 192.168.0.122
-#        user: admin
-#          password: secret
+          user: root
+          password: DT250985dt!
  
