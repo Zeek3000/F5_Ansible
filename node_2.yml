@@ -4,8 +4,8 @@
   hosts: StarWars
   connection: local
   gather_facts: false
-  collections:
-    - f5networks.f5_modules
+#  collections:
+#    - f5networks.f5_modules
 - name: "CREATE NODE"
   bigip_node:
     host: 10.2.0.4
