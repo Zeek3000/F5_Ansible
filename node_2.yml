@@ -7,7 +7,7 @@
 #  collections:
 #    - f5networks.f5_modules
 - name: "CREATE NODE"
-  bigip_node:
+  f5networks.f5_modules.bigip_node:
     host: 10.2.0.4
     name: Test_Ansible_Node_From_Git
     provider: "{{ provider }}"
