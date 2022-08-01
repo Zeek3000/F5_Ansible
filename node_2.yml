@@ -1,9 +1,9 @@
 ---
 
-- name: "F5 NODE ADD YT EXAMPLE"
-  hosts: StarWars
-  connection: local
-  gather_facts: false
+#- name: "F5 NODE ADD YT EXAMPLE"
+#  hosts: StarWars
+#  connection: local
+#  gather_facts: false
 #  collections:
 #    - f5networks.f5_modules
 - name: "CREATE NODE"
